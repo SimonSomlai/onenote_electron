@@ -1,9 +1,9 @@
-/*---- 
+/*----
 @extend .message; - copies css from .message element
 @include transition(3s); - include transition from mixin
-&:hover - nested action on hover of the element 
+&:hover - nested action on hover of the element
 @import 'reset'; - includes the reset.scss in current sheet
-%bg-image{CODE}; - includes an element that can be extended from, but will not be included in final css 
+%bg-image{CODE}; - includes an element that can be extended from, but will not be included in final css
 background-color:lighten($color,10%); - Lightens color (good for hovers!)
 -----*/
 /* Mixin Functions */
@@ -61,7 +61,7 @@ $secondary: #5FCF80;
 html {
     position: relative;
     min-height: 100%;}
-	body{	
+	body{
 		font-family: "Roboto", sans-serif;
 		color: $text;}
 body a{
@@ -77,19 +77,21 @@ body a{
 	clear:both;}
 
 /*---------------------*/
-/*    HEADER & NAV     */
-/*---------------------*/
-
-/*---------------------*/
-/* 		SIDE           */
-/*---------------------*/
-
-/*---------------------*/
 /* 		CONTENT  	   */
 /*---------------------*/
+.note-row{
+  margin-top: 25px;
+}
+.center-block{
+  margin: 0 auto;
+  float: none;
+}
 
+.note-col{
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
 /*---------------------*/
 /* 		FOOTER 		   */
 /*---------------------*/
-
-

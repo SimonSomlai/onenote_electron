@@ -1,0 +1,51 @@
+/*
+Error: Invalid CSS after "": expected selector, was "<!DOCTYPE html>"
+        on line 1 of /home/simon/Desktop/Code/onenote_electron/index.html
+
+1: <!DOCTYPE html>
+2: <html lang="en">
+3: 
+4: <head>
+5:   <meta name="author" content="Simon Somlai" />
+6:   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+Backtrace:
+/home/simon/Desktop/Code/onenote_electron/index.html:1
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1105:in `expr!'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/static_parser.rb:20:in `parse_selector'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:427:in `visit_rule'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:391:in `run'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/home/simon/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/home/simon/.rbenv/versions/2.3.1/bin/sass:23:in `load'
+/home/simon/.rbenv/versions/2.3.1/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"\": expected selector, was \"<!DOCTYPE html>\"\A         on line 1 of /home/simon/Desktop/Code/onenote_electron/index.html\A \A 1: <!DOCTYPE html>\A 2: <html lang=\"en\">\A 3: \A 4: <head>\A 5:   <meta name=\"author\" content=\"Simon Somlai\" />\A 6:   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">"; }
