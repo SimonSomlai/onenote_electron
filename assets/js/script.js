@@ -18,10 +18,13 @@ function createDb() {
 function createNote(){
   $("#submit").on("click", function(e){
     e.preventDefault()
-  }
+    var title = $("#title").val()
+    var descr = $("#descr").val()
+    console.log(title, descr)
+  })
 }
 
 $(document).ready(function() {
     createDb();
-    insertDb();
+    createNote();
 })
