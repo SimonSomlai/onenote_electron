@@ -1,30 +1,40 @@
-function createDb() {
-    // Type 3: Persistent datastore with automatic loading
+function createDb(){
     var Datastore = require('nedb'),
         db = new Datastore({
-            filename: 'database.db',
+            filename: '../database/database.db',
             autoload: true
         });
-
-    // Of course you can create multiple datastores if you need several
-    // collections. In this case it's usually a good idea to use autoload for all collections.
-    db = {};
-    db.users = new Datastore('database.db');
-
-    // You need to load each database (here we do it asynchronously)
-    db.users.loadDatabase();
-}
+    window.db = db;
+};
 
 function createNote(){
-  $("#submit").on("click", function(e){
-    e.preventDefault()
-    var title = $("#title").val()
-    var descr = $("#descr").val()
-    console.log(title, descr)
-  })
-}
+    $("#submit").on("click", function(e){
+            e.preventDefault();
+            var title = $("#title").val();
+            var descr = $("#descr").val();
+            var doc = {
+                title: title,
+                description: descr,
+            };
+            db.insert(doc, function(err, newDoc) {});
+        });
+    };
+
+function loadNotes(){
+    db.find({}, function(err, docs){
+        $.each(docs, function(index, note){
+            title = note.title;
+            description = note.description;
+            html = '<a href="#" class="list-group-item">' +
+                '<h4 class="list-group-item-heading">' + title + '</h4>' +
+                '<p class="list-group-item-text">' + description + '</p></a>';
+            $("#note-group").append(html);
+        });
+    });
+  }
 
 $(document).ready(function() {
     createDb();
     createNote();
+    loadNotes();
 })

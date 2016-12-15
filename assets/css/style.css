@@ -17,11 +17,11 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #646E76; }
+  color: #646e76; }
 
 body a {
   text-decoration: none;
-  color: #646E76; }
+  color: #646e76; }
 
 /*Clearfix*/
 .cf:before, .cf:after {
@@ -46,8 +46,9 @@ body a {
   border: 1px solid grey;
   border-radius: 5px; }
 
+#note-group {
+  margin-top: 25px; }
+
 /*---------------------*/
 /* 		FOOTER 		   */
 /*---------------------*/
-
-/*# sourceMappingURL=style.css.map */
